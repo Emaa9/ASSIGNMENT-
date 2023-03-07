@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(228, 233, 243);
+}
+
+.App{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.submit{
+    padding: 10px;
+    background-color: rgb(158, 201, 209);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.input{
+    padding: 10px;
+    margin: 10px;
+    width: 450px;
+    border-color: aliceblue;
+    border-bottom: none;
+}
+
+.button{
+    margin: 5px;
+    width: 60px;
+    height: 40px;
+    background-color: rgb(89, 89, 242);
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(215, 214, 247);
+    color: black;
+}
+
+.all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    width: 80%;
+}
+
+.content{
+    width: 50%;
+    background: linear-gradient(to bottom, rgb(55, 55, 91) 80%, rgb(158, 201, 209) 100%);
+    padding: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.author{
+   background: linear-gradient(to bottom, rgb(158, 201, 209), antiquewhite 100%);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-decoration: double;
+   padding: 10px;
+   border-radius: 10px;
+   
+}
+.title{
+    background: linear-gradient(to bottom, rgb(158, 201, 209), rgb(207, 200, 192) 50%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    padding: 10px;
+    border-radius: 10px;
+  
+}
+
+.genre{
+    background: linear-gradient(to bottom, rgb(158, 201, 209), rgb(125, 121, 115) 20%);
+    padding: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px){
+    
+    .App{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .submit{
+        margin: auto;
+        padding: 10px;
+        background-color: rgb(158, 201, 209);
+        width: 100%;
+    }
+
+    .input{
+        width: 300px 
+    }
+
+    .all{
+        width:100%;
+    }
+
+    .content{
+        width: 100%;
+        font-size: 12px;
+        margin-bottom: 1px;
+        margin-top: 10px;
+        border-radius: 1px;
+       
+    }
+}
