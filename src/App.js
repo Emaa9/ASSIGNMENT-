@@ -24,7 +24,9 @@ const handleChange = (e) =>{
 }
 
 useEffect(()=>{
-   
+  const strAscending= [...data].sort((a,b)=>
+  a.author > b.author ? 1: -1
+)
   setSearchValue(strAscending)
 
 }, [])
